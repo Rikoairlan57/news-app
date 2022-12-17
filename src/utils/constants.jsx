@@ -10,7 +10,7 @@ export const pages = [
   { route: "/", name: "Indonesia" },
   { route: "/programming", name: "Programming" },
   { route: "/covid", name: "Covid-19" },
-  { route: "/saved", name: "Saved" },
+  { route: "/saved", name: "Bookmarks" },
 ];
 
 export const iconlists = [
