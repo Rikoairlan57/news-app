@@ -1,11 +1,5 @@
-import React from "react";
+import Home from "./Home";
+import Saved from "./Saved";
+import SpecialPages from "./SpecialPages";
 
-function index() {
-  return (
-    <div>
-      <h1>main page</h1>
-    </div>
-  );
-}
-
-export default index;
+export { Home, SpecialPages, Saved };
