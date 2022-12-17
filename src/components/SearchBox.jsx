@@ -16,18 +16,15 @@ function SearchBox() {
   const searchInput = useRef(null);
   let history = useHistory();
 
-  // Update query agar mentrigger data fetching
   const setQuery = (event) => {
-    // Mengecek event user, jika menekan enter atau klik maka kondisi true
     if (event.key === "Enter" || event["type"] === "click") {
       dispatch({ type: SET_LOADING, payload: true });
       history.push(`/search/${text}`);
       dispatch({ type: SET_QUERY_SEARCH, payload: text });
-      dispatch({ type: TOGGLE_NAVBAR, payload: -1 }); // value -1, agar tidak ada border bottom di navbar pada route search
+      dispatch({ type: TOGGLE_NAVBAR, payload: -1 });
     }
   };
 
-  // Digunakan agar tiap berpindah halaman, user langsung difokuskan kepada input search box.
   useEffect(() => {
     searchInput.current.focus();
   }, [pages]);

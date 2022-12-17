@@ -1,10 +1,6 @@
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { isItDefaultImg } from "./helpers";
 
-/**
- * @readonly
- */
-
 export const DEFAULT_IMAGE = /(rcom-default|reuters-default)/g;
 
 export const LIMIT_MESSAGE =
@@ -38,28 +34,28 @@ export const iconlists = [
 ];
 export const footerlists = [
   {
-    header: "Kategori",
+    header: "Category",
     lists: [
-      "Edukasi",
-      "Teknologi",
+      "Education",
+      "Technology",
       "Entertainment",
       "Sport",
-      "SepakBola",
-      "Otomotif",
+      "Football",
+      "Automotive",
     ],
   },
   {
-    header: "Jaringan Media",
+    header: "Media Network",
     lists: ["CNN Indonesia", "CNBC Indonesia", "Insertlive", "Female Daily"],
   },
   {
-    header: "Informasi",
+    header: "Information",
     lists: [
-      "Redaksi",
-      "Media Siber",
-      "Karir",
-      "Media Partner",
-      "Info Iklan",
+      "Editor",
+      "Cyber ​​Media",
+      "Career",
+      "Media Partners",
+      "Advertising Info",
       "Disclaimer",
     ],
   },

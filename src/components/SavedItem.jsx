@@ -1,10 +1,6 @@
 import { FaTrash } from "react-icons/fa";
 import { Button } from ".";
 
-/**
- * Selain params dibawah ini, sudah dijelaskan pada file/komponen (NewsItem)
- * @param deleteNews - Function untuk menghapus sebuah berita yang diklik user.
- */
 function SavedItem({
   index,
   source: { name },
@@ -13,7 +9,6 @@ function SavedItem({
   url,
   deleteNews,
 }) {
-  // Styling agar table listnya strip (belang)
   const isOdd = index % 2 === 0 ? "bg-text-light" : "bg-white";
   const trStyle = `${isOdd} hover:bg-gray-300 transition ease-in-out duration-500 hover:text-black group`;
 

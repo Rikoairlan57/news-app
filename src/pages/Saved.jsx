@@ -8,18 +8,16 @@ function Saved() {
 
   if (isLoading) return <Loading />;
 
-  // Menghapus sebuah berita yang diklik oleh user.
   const deleteNews = (id) => {
     const deleteNews = state.saved_news.filter((item) => item.url !== id);
     dispatch({ type: SET_SAVED_NEWS, payload: deleteNews });
   };
 
-  // Komponen kecil untuk menampilkan pesan saat user belum ada berita yang disimpan
   const emptyMessage = (
     <tr>
       <td colSpan={4}>
         <p className="p-5 text-lg font-medium text-center text-gray-600 lg:p-3">
-          Belum ada berita favorite, pilihlah berita favoritmu.
+          There is no favorite news yet, choose your favorite news.
         </p>
       </td>
     </tr>

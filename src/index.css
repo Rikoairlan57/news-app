@@ -41,9 +41,9 @@ button {
 }
 
 .heading-border-2 {
-  @apply block w-full pb-6 border-b-2 border-primary-light;
+  @apply block w-full pb-6 border-b-2 border-primary-dark;
 }
 
 .heading-border-3 {
-  @apply block mb-6 border-b-4 w-11 border-primary-light;
+  @apply block mb-6 border-b-4 w-11 border-primary-dark;
 }
