@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Button({
+const Button = ({
   className,
   onClick,
   children,
   ariaLabel,
   tabIndex = "0",
-}) {
+}) => {
   return (
     <button
       className={className}
@@ -17,4 +17,6 @@ export default function Button({
       {children}
     </button>
   );
-}
+};
+
+export default Button;
