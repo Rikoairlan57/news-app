@@ -1,5 +1,4 @@
 function NewsLists({ children, className, type = "default" }) {
-  // For styling purpose
   const styles = {
     aside: "flex-col lg:space-y-0",
     search: "flex-col lg:space-y-7",

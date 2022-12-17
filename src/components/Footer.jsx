@@ -12,12 +12,10 @@ function Footer() {
   const [state, dispatch] = useNewsContext();
   const { isLoading } = state;
 
-  // For styling purpose
   const footerStyle = `flex w-full p-16 text-lg text-white md:flex-col lg:justify-center lg:flex-row md:items-center bg-primary-dark ${
     isLoading ? "hidden" : "block"
   }`;
 
-  // Pergi ke berita dan route sesuai list yang diklik pengguna
   const applyQuery = (list) => {
     dispatch({ type: SET_LOADING, payload: true });
     dispatch({ type: SET_QUERY_SEARCH, payload: list });
@@ -27,7 +25,7 @@ function Footer() {
   return (
     <footer className={footerStyle}>
       <div className="self-center text-center">
-        <h3 className="mb-4 text-xl font-extrabold">HotNews.</h3>
+        <h3 className="mb-4 text-xl font-extrabold">News App</h3>
         <div className="flex justify-between text-3xl w-52">
           {iconlists.map(({ name, link, icon }) => (
             <Button

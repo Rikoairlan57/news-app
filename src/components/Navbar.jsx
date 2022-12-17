@@ -18,7 +18,7 @@ export default function Navbar() {
   const ulStyle = `mt-3 text-xl md:flex md:mt-0 md:space-x-5 lg:space-x-16 ${
     isNavClosed ? "hidden" : "block"
   }`;
-  const navStyle = `px-12 py-5 text-white duration-200 ease-out transition-height md:flex md:items-center md:justify-between bg-gradient-to-r from-primary-dark to-primary-light ${
+  const navStyle = `px-12 py-5 text-white duration-200 ease-out transition-height md:flex md:items-center md:justify-between bg-primary-dark ${
     isNavClosed ? "h-22" : "h-50"
   }`;
 
@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <nav className={navStyle}>
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-extrabold">HotNews.</h1>
+        <h1 className="text-2xl font-extrabold">News App</h1>
         <Button
           className="md:hidden"
           onClick={() => setIsNavClosed(!isNavClosed)}

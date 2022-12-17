@@ -1,12 +1,11 @@
 import * as Page from "./pages";
-import Navbar from "./components/Navbar";
-import SearchBox from "./components/SearchBox";
-import Footer from "./components/Footer";
+import { Footer, Navbar, SearchBox } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useFetch } from "./hook/useFetch";
 
 function App() {
   useFetch();
+
   return (
     <Router>
       <Navbar />

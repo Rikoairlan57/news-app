@@ -7,10 +7,6 @@ import { LIMIT_MESSAGE } from "../utils/constants";
 
 const { PARAMS, BASE_URL, ENDPOINT } = CONFIG;
 
-/**
- * Custom hooks ini digunakan untuk mengambil data (data fetching)
- * @returns {Object} - Berisi state news dan isLoading, kebutuhannya sesuai namanya.
- */
 export const useFetch = () => {
   const [state, dispatch] = useNewsContext();
   const { news, isLoading, query, size } = state;
@@ -23,7 +19,7 @@ export const useFetch = () => {
 
         if (data["totalResults"] === 0) {
           const message =
-            "Maaf, kami tidak bisa menemukan berita yang ingin kamu cari.";
+            "Sorry, we couldn't find the news you were looking for.";
           dispatch({ type: GET_NEWS, payload: [] });
           dispatch({ type: SET_MESSAGE, payload: message });
         } else if (data["status"] === "ok") {

@@ -1,7 +1,7 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from 'react';
 
 const NewsContext = createContext();
-NewsContext.displayName = "NewsContext";
+NewsContext.displayName = 'NewsContext';
 
 export const NewsProvider = ({ children, initialState, reducer }) => {
   const [globalState, dispatch] = useReducer(reducer, initialState);

@@ -1,4 +1,4 @@
-function Button({ className, onClick, children, ariaLabel, tabIndex = "0" }) {
+function Button({ className, onClick, children, ariaLabel, tabIndex = '0' }) {
   return (
     <button
       className={className}
