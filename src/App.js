@@ -1,10 +1,24 @@
-import React from "react";
+import * as Page from "./pages";
+import Navbar from "./components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Navbar />
+
+      <Switch>
+        <Route exact path="/">
+          <Page.Home />
+        </Route>
+        <Route path={["/programming", "/covid", "/search/*"]}>
+          <Page.SpecialPages />
+        </Route>
+        <Route path="/saved">
+          <Page.Saved />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
