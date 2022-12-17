@@ -1,5 +1,5 @@
 import * as Page from "./pages";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Page.Saved />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
