@@ -53,7 +53,12 @@ function NewsItem({
     <article className={articleStyle[type]}>
       <div className={div1Style[type]}>
         <div className={div2Style[type]} role="button" onClick={openNewsSource}>
-          <img className={imgStyle(urlToImage)} src={urlToImage} alt={title} />
+          <img
+            className={imgStyle(urlToImage)}
+            src={urlToImage}
+            alt={title}
+            loading="lazy"
+          />
           <FaSearch className={faSearchStyle.style(type)} />
         </div>
         <Button
